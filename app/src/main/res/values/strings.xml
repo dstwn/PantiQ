@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PantiQ</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_detail">DetailActivity</string>
+</resources>
