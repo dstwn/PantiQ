@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay"
-        app:elevation="2dp"
+        app:elevation="8dp"
         >
 
         <androidx.appcompat.widget.Toolbar
@@ -19,7 +19,7 @@
             android:layout_height="?attr/actionBarSize"
             android:background="@android:color/white"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            android:elevation="2dp"
+            app:elevation="8dp"
             >
             <TextView
                 android:id="@+id/judule"

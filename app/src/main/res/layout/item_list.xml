@@ -3,12 +3,47 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="200dp">
+    android:layout_height="160dp"
+    android:id="@+id/item_id"
+    >
+
     <androidx.cardview.widget.CardView
         android:padding="10dp"
         app:cardElevation="2dp"
         app:cardUseCompatPadding="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@color/colorPrimaryDark"
+            />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JudulJudul bacot bacot"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Opoi opoiOpoi opoiOpoi opoiOpoi opoiOpoi opoiOpoi opoiOpoi opoiOpoi opoiOpoi opoiOpoi opoi"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,7 @@
     tools:context=".activity.DetailActivity"
     tools:showIn="@layout/activity_detail">
         <ImageView
-            android:src="#6b6b6b"
+            android:src="#ff0011"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:id="@+id/imagePanti"
