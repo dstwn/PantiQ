@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new FragmentAll(),"All");
+        adapter.addFragment(new FragmentAll(),"HOME");
         adapter.addFragment(new FragmentBantul(),"Bantul");
         adapter.addFragment(new FragmentSleman(),"Sleman");
         adapter.addFragment(new FragmentKotaYogya(), "Kota Yogya");
