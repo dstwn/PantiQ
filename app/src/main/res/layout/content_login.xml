@@ -8,85 +8,109 @@
     tools:context=".activity.LoginActivity"
     tools:showIn="@layout/activity_login">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="20dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingStart="3dp"
-            android:paddingEnd="3dp"
-            android:paddingBottom="20dp">
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlineBox"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <FrameLayout
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top" >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@color/colorPrimary"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            </FrameLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Username"
-                app:boxCornerRadiusBottomLeft="32dp"
-                app:boxCornerRadiusBottomRight="32dp"
-                app:boxCornerRadiusTopLeft="32dp"
-                app:boxCornerRadiusTopRight="32dp">
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingBottom="20dp">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-            </com.google.android.material.textfield.TextInputLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="3dp"
-            android:paddingEnd="3dp"
-            android:paddingBottom="20dp">
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlineBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Password"
-                app:boxCornerRadiusBottomLeft="32dp"
-                app:boxCornerRadiusBottomRight="32dp"
-                app:boxCornerRadiusTopLeft="32dp"
-                app:boxCornerRadiusTopRight="32dp">
-
-                <com.google.android.material.textfield.TextInputEditText
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlineBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword"
-                    app:passwordToggleEnabled="true" />
-            </com.google.android.material.textfield.TextInputLayout>
-        </LinearLayout>
+                    android:hint="Username"
+                    app:boxCornerRadiusBottomLeft="32dp"
+                    app:boxCornerRadiusBottomRight="32dp"
+                    app:boxCornerRadiusTopLeft="32dp"
+                    app:boxCornerRadiusTopRight="32dp">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnlogin"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_gravity="center|end"
-            android:layout_margin="5dp"
-            android:clickable="true"
-            android:elevation="5dp"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:text="Login"
-            android:textColor="@android:color/white"
-            android:textSize="12dp"
-            app:backgroundTint="@color/colorAccent"
-            app:cornerRadius="32dp"
-            app:iconPadding="10dp"
-            app:iconTint="@android:color/white" />
-    </LinearLayout>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlineBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    app:boxCornerRadiusBottomLeft="32dp"
+                    app:boxCornerRadiusBottomRight="32dp"
+                    app:boxCornerRadiusTopLeft="32dp"
+                    app:boxCornerRadiusTopRight="32dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        app:passwordToggleEnabled="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnlogin"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center|end"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="Login"
+                android:textColor="@android:color/white"
+                android:textSize="12dp"
+                app:backgroundTint="@color/colorAccent"
+                app:cornerRadius="32dp"
+                app:iconPadding="10dp"
+                app:iconTint="@android:color/white" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

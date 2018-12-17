@@ -8,8 +8,17 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main"
     tools:context=".activity.MainActivity">
-    <com.google.android.material.button.MaterialButton
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/appbar"
+        android:id="@+id/vp"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+    </androidx.viewpager.widget.ViewPager>
+    <com.google.android.material.button.MaterialButton
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn"
         android:text="Text"
