@@ -26,17 +26,26 @@
         <activity
             android:name=".activity.MainActivity"
             android:label="@string/title_activity_splash_screen"
+            android:parentActivityName=".activity.DashboardActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.DetailActivity"
             android:label="@string/title_activity_detail"
             android:parentActivityName=".activity.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.SearchActivity"
             android:label="@string/title_activity_search"
             android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.DashboardActivity"
+            android:label="@string/title_activity_dashboard"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -48,24 +48,26 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tabkab);
         tabLayout.setupWithViewPager(viewPager);
 
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_back);
         MaterialButton btn = (MaterialButton) findViewById(R.id.btn);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), DetailActivity.class);
+                Intent i = new Intent(getApplicationContext(), DashboardActivity.class);
                 startActivity(i);
             }
         });
 
-        CardView mdv =(CardView) findViewById(R.id.searchview);
-        mdv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),SearchActivity.class);
-                startActivity(i);
-            }
-        });
+        setTitle("");
+//        CardView mdv =(CardView) findViewById(R.id.searchview);
+//        mdv.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(getApplicationContext(),SearchActivity.class);
+//                startActivity(i);
+//            }
+//        });
 
     }
 
